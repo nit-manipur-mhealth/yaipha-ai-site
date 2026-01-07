@@ -2,87 +2,123 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Yaipha AI – Mediconex</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yaipha AI</title>
+  <meta name="description" content="Yaipha AI builds minimal, secure AI-powered digital healthcare solutions." />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #2563eb;
+      --border: #e5e7eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 64px 20px;
+    }
+    header {
+      padding-bottom: 48px;
+      border-bottom: 1px solid var(--border);
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin: 0 0 12px 0;
+    }
+    h2 {
+      margin-top: 48px;
+      font-size: 1.5rem;
+    }
+    p {
+      color: var(--muted);
+      max-width: 720px;
+    }
+    ul {
+      padding-left: 18px;
+      color: var(--muted);
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 72px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .links a {
+      margin-right: 16px;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Yaipha AI</h1>
-    <p>AI-powered digital healthcare solutions for clinics and patients.</p>
-  </header>
+  <main class="container">
+    <header>
+      <h1>Yaipha AI</h1>
+      <p>Building minimal, secure and reliable AI-powered digital healthcare products.</p>
+    </header>
 
-  <main>
-    <!-- About Company -->
     <section>
-      <h2>About Yaipha AI</h2>
+      <h2>About</h2>
       <p>
-        Yaipha AI <!-- or Yaipha AI Private Limited -->
-        is a technology startup focused on building safe, reliable
-        and user-friendly digital health products. We work with doctors,
-        clinics and patients to improve access to healthcare, especially
-        in underserved regions.
-      </p>
-      <p>
-        Our team combines experience in software engineering, cloud
-        infrastructure and healthcare workflows to build scalable, secure
-        platforms.
+        Yaipha AI is a technology startup focused on developing user-friendly
+        digital health platforms for clinics, doctors and patients.
+        Our mission is to improve healthcare access through thoughtful
+        software design and responsible use of AI.
       </p>
     </section>
 
-    <!-- Product: Mediconex -->
     <section>
-      <h2>Mediconex</h2>
+      <h2>Product</h2>
       <p>
-        Mediconex is a mobile application developed by Yaipha AI that helps
-        patients connect with doctors for appointment booking and follow-up care.
+        <strong>Mediconex</strong> is our healthcare application that enables
+        patients to book appointments, manage visits and stay connected
+        with healthcare providers.
       </p>
-      <h3>Key Features</h3>
       <ul>
-        <li>Book appointments with registered doctors and clinics.</li>
-        <li>Maintain basic health information and visit history.</li>
-        <li>Receive follow-up instructions and reminders.</li>
-        <li>Secure login and protected access to personal data.</li>
+        <li>Doctor and clinic appointment booking</li>
+        <li>Secure user authentication</li>
+        <li>Basic health and visit records</li>
+        <li>Follow-up reminders and communication</li>
       </ul>
-      <p>
-        Mediconex will be available on Android via the Google Play Store.
-      </p>
     </section>
 
-    <!-- Contact / Imprint -->
     <section>
       <h2>Contact</h2>
-      <p><strong>Company name:</strong> YAIPHA AI LEGAL NAME HERE</p>
       <p>
-        <strong>Registered address:</strong><br />
-        ADDRESS LINE 1<br />
-        ADDRESS LINE 2 (OPTIONAL)<br />
-        CITY, STATE, PIN CODE<br />
-        COUNTRY
-      </p>
-      <p>
-        <strong>Email:</strong>
-        <a href="mailto:SUPPORT_EMAIL_HERE">SUPPORT_EMAIL_HERE</a>
-      </p>
-      <p>
-        <strong>Phone:</strong> PHONE_NUMBER_WITH_COUNTRY_CODE
-        <!-- e.g. +91-XXXXXXXXXX -->
+        <strong>Company:</strong> Yaipha AI<br />
+        <strong>Email:</strong> <a href="mailto:yaipha.ai@gmail.com">yaipha.ai@gmail.com</a><br />
+        <strong>Phone:</strong> +91 90893 57544
       </p>
     </section>
 
     <section>
       <h2>Legal</h2>
-      <ul>
-        <li><a href="privacy.html">Privacy Policy (Mediconex)</a></li>
-        <li><a href="terms.html">Terms of Use (Mediconex)</a></li>
-      </ul>
+      <div class="links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+      </div>
     </section>
+
+    <footer>
+      © <span id="year"></span> Yaipha AI 2026. All rights reserved.
+    </footer>
   </main>
 
-  <footer>
-    <p>&copy; <span id="year"></span> Yaipha AI. All rights reserved.</p>
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
